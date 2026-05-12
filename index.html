@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Server VIP của Xu</title>
+</head>
+<body style="font-family: Arial; text-align: center; margin-top: 50px;">
+    <h1>Server VIP của Xu</h1>
+
+    <p>Sao chép link bên dưới:</p>
+
+    <input type="text" id="link" value="https://www.roblox.com/share?code=5c5a2f3e8b5f4d48824cad1f5ad80135&type=Server"width: 80%; padding: 10px;" readonly>
+
+    <br><br>
+
+    <button onclick="copyLink()" style="padding: 10px 20px; cursor: pointer;">
+        Copy link
+    </button>
+
+    <script>
+        function copyLink() {
+            var copyText = document.getElementById("link");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            alert("Đã sao chép link!");
+        }
+    </script>
+</body>
+</html>
